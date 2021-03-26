@@ -17,8 +17,10 @@ Authorize account
 *** Tasks ***
 Access ChinaTel invoice
     Authorize account
+    Add Gmail Labels    电信发票    FROM "cthb10000@189.cn"
     @{emails}    List Messages    FROM "cthb10000@189.cn"
     FOR    ${email}    IN    @{emails}
-        Save Attachment    ${email}    target_folder=${CURDIR}${/}pdf    overwrite=True
+        Log    ${email}[Has-Attachments]
+        # Save Attachment    ${email}    target_folder=${CURDIR}${/}pdf    overwrite=True
     END
 
