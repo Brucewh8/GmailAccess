@@ -17,7 +17,7 @@ Authorize account
 *** Tasks ***
 Access ChinaTel invoice
     Authorize account
-    @{emails}    List Messages    SUBJECT "中国电信湖北公司电子发票"
+    @{emails}    List Messages    FROM "cthb10000@189.cn"
     # FOR    ${email}    IN    @{emails}
     #     Save Attachment    ${email}    target_folder=${CURDIR}${/}pdf    overwrite=True
     # END
