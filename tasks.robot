@@ -21,6 +21,6 @@ Access ChinaTel invoice
     @{emails}    List Messages    FROM "cthb10000@189.cn"
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Has-Attachments]
-        Save Attachment    ${email}    target_folder=${CURDIR}${/}output    overwrite=True
+        Save Attachment    ${email}    target_folder=${CURDIR}    overwrite=True
     END
 
