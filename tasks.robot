@@ -18,7 +18,7 @@ Authorize account
 Access ChinaTel invoice
     Authorize account
     @{emails}    List Messages    FROM "cthb10000@189.cn"
-    # FOR    ${email}    IN    @{emails}
-    #     Save Attachment    ${email}    target_folder=${CURDIR}${/}pdf    overwrite=True
-    # END
+    FOR    ${email}    IN    @{emails}
+        Save Attachment    ${email}    target_folder=${CURDIR}${/}pdf    overwrite=True
+    END
 
