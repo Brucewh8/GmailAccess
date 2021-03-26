@@ -3,8 +3,8 @@ Documentation   Template robot main suite.
 Library    RPA.Email.ImapSmtp
 ...    smtp_server=smtp.gmail.com
 ...    smtp_port=587
-...    imap_server=imap.gmail.com
-...    imap_port=993
+# ...    imap_server=imap.gmail.com
+# ...    imap_port=993
 Library    RPA.Robocloud.Secrets
 
 
