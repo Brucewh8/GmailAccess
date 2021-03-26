@@ -17,7 +17,7 @@ Authorize account
 *** Tasks ***
 Access ChinaTel invoice
     Authorize account
-    Add Gmail Labels    电信发票    FROM "cthb10000@189.cn"
+    Add Gmail Labels    CT_Invoice    FROM "cthb10000@189.cn"
     @{emails}    List Messages    FROM "cthb10000@189.cn"
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Has-Attachments]
