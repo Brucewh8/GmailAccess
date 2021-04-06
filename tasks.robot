@@ -17,7 +17,7 @@ Authorize account
 *** Tasks ***
 Access ChinaTel invoice
     Authorize account
-    Add Gmail Labels    CT_Invoice    SUBJECT "中国电信湖北公司电子发票"
+    Add Gmail Labels    CT_Invoice    SUBJECT u"中国电信湖北公司电子发票"
     @{emails}    List Messages    (FROM "cthb10000@189.cn" /UNSEEN)
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Subject]
