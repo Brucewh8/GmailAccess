@@ -21,6 +21,6 @@ Access ChinaTel invoice
     @{emails}    List Messages    FROM "cthb10000@189.cn" RECENT
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Subject]
-        Do Message Actions    
+        # Do Message Actions    
     END
 
