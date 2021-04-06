@@ -17,8 +17,8 @@ Authorize account
 *** Tasks ***
 Access ChinaTel invoice
     Authorize account
-    Add Gmail Labels    CT_Invoice    FROM "cthb10000@189.cn" /UNSEEN
-    @{emails}    List Messages    FROM "cthb10000@189.cn" /UNSEEN
+    Add Gmail Labels    CT_Invoice    FROM "cthb10000@189.cn" {/}UNSEEN
+    @{emails}    List Messages    FROM "cthb10000@189.cn" {/}UNSEEN
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Subject]
         Do Message Actions    
