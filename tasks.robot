@@ -21,7 +21,7 @@ Access ChinaTel invoice
     @{emails}    List Messages    (FROM "cthb10000@189.cn" UNSEEN)
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Subject]
-        Log    ${email}[Recieved]
+        Log    ${email}[Received]
         # Add Gmail Labels    CT_Invoice    Mail-ID ${email}[Mail-Id]
         # Save Attachment    ${email}    target_folder=${CURDIR}${/}pdf    overwrite=True
     END
