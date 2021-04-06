@@ -22,6 +22,6 @@ Access ChinaTel invoice
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Subject]
         Log    ${email}[Mail-Id]
-        # Do Message Actions    
+        Add Gmail Labels    CT_Invoice    Mail-ID:${email}[Mail-Id]
     END
 
