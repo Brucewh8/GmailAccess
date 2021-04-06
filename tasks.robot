@@ -21,6 +21,7 @@ Access ChinaTel invoice
     @{emails}    List Messages    (FROM "cthb10000@189.cn" UNSEEN)
     FOR    ${email}    IN    @{emails}
         Log    ${email}[Subject]
+        Log    ${email}[Mail-Id]
         # Do Message Actions    
     END
 
