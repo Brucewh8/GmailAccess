@@ -18,7 +18,7 @@ Authorize account
 Access ChinaTel invoice
     Authorize account
     # Add Gmail Labels    CT_Invoice    (FROM "cthb10000@189.cn" RECENT)
-    Save Messages    (FROM "cthb10000@189.cn" UNSEEN)    target_folder=${CURDIR}${/}mail    overwrite=True
+    Save Messages    (FROM "cthb10000@189.cn" UNSEEN)    target_folder=${CURDIR}${/}mail
     # @{emails}    List Messages    (FROM "cthb10000@189.cn" UNSEEN)
     # FOR    ${email}    IN    @{emails}
     #     Log    ${email}[Subject]
